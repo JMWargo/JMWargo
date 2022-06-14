@@ -1,0 +1,97 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	char input;
+
+	cout << "Hello, please type the corresponding number to the operand of your choice\n";
+	cout << "1. Addition\n" << "2. Subtraction\n" << "3. Multiplication\n" << "4. Division\n";
+	cin >> input;
+
+	switch (input)
+	{
+  
+		case '1':
+	{
+		double a, b, c;
+
+
+		cout << "Please type which two numbers you would like to add\n";
+		cout << "1. ";
+		cin >> a;
+		cout << "2. ";
+		cin >> b;
+
+		c = a + b;
+
+		cout << "Your answer is: " << c;
+
+		break;
+	}
+  
+	case '2':
+	{
+		double d, e, f;
+
+
+		cout << "Please type which two numbers you would like to subtract-\n";
+		cout << "1. (Number you are subtracting from) \n";
+		cin >> d;
+		cout << "2. (Number you are subtracting) \n";
+		cin >> e;
+
+		f = d - e;
+
+		cout << "Your answer is: " << f;
+
+		break;
+	}
+  
+	case '3':
+	{
+		double g, h, i;
+
+
+		cout << "Please type which two numbers you would like to multiply-\n";
+		cout << "1. ";
+		cin >> g;
+		cout << "2. ";
+		cin >> h;
+
+		i = g * h;
+
+		cout << "Your answer is: " << i;
+
+		break;
+	}
+  
+	case '4':
+	{
+		double j, k, l;
+
+
+		cout << "Please type which two numbers you would like to divide-\n";
+		cout << "1. (Number that is being divided) \n";
+		cin >> j;
+		cout << "2. (Number that is the divider) \n";
+		cin >> k;
+
+		l = j / k;
+
+		cout << "Your answer is: " << l;
+
+		break;
+	}
+	default:
+	{
+		cout << "Error, please try again";
+		break;
+	}
+
+	}
+	return 0;
+}
